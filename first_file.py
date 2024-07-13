@@ -1,7 +1,12 @@
-first = input('Enter your First Name:')
-last = input('Enter your Last Name:')
-age = input('Enter your age:')
-age = int(age)
+from datetime import datetime
+current_year = datetime.now().year
 
-newAge = (100 - age) + 2024
-print(first + ' ' + last + ' ' + 'will turn 100 years old in ' + str(newAge))
+first = input('Enter your First Name: ')
+last = input('Enter your Last Name: ')
+age = input('Enter your age: ')
+
+year100 = current_year + (100 - int(age))
+
+copyNum = input('Enter a number : ')
+for i in range(int(copyNum)):
+    print(f"You will turn 100 years old in the year {year100}.\n")
